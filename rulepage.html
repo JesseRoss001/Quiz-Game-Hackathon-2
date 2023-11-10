@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/styles1.css"
+    <link rel="stylesheet" href="assets/css/rules.css">
+   
+
+</head>
+<body>
+<main>
+        <!-- Header section -->
+        <header class="container-fluid header-container  m-0 p-0 ">
+            <!-- Mobile version of header -->
+            <div class="row g-0 d-flex justify-content-center align-items-center ms-3 me-3 ">
+                <div
+                    class="d-flex d-md-none col-12   justify-content-center align-content-center text-center header mt-4  ">
+                    <!-- Logo and title for mobile version -->
+                    <i class="fa-solid fa-hand-fist header-text header-text-smaller"> </i> <span
+                        class="header-text header-text-smaller"> &nbsp Boxing Millionare </span>
+                </div>
+            </div>
+            <!-- Desktop version of header -->
+            <div class="row d-flex justify-content-center align-items-center ">
+                <div class="d-none d-md-flex col-12  justify-content-center align-content-center text-center header mt-2 ">
+                    <!-- Logo and title for desktop version -->
+                    <i class="fa-solid fa-hand-fist header-text mt-2"> </i> <span class="header-text"> &nbsp Boxing
+                        Millionare </span>
+                </div>
+            </div>
+        </header>
+    
+    <div class="row d-flex justify-content-center align-content-center">
+        
+            <div class="card col-10  mt-4 d-flex justify-content-center" >
+                <div class="row  d-flex justify-content-center align-content-center  "> 
+                    <div class="col-12 col-md-6  mt-4 position-relative">
+                        <div class="overlay-text mb-1"> Welcome have you Played before ? </div>
+                        <a href="index copy.html"><button type="button" class="btn btn-light d-md-none">Yes</button></a>
+                          <a href="#fromno">  <button type="button" class="btn btn-light d-md-none ">No</button> </a> 
+                <img src="assets/images/presenter1.webp" class="img-fluid " alt="...">
+                
+            </div>
+            <div class="d-none d-md-inline-flex col-md-6 mt-2">
+                <div class="row">
+                    <div class="col-12 justify-content-center align-content-center">
+                <a href="index copy.html"><button type="button" class="btn btn-light ms-5 me-3 ">Yes</button></a>
+                <a href="#fromno"   >  <button type="button" class="btn btn-light ms-5 me-3 ">No</button> </a>  
+            </div>
+            <div class="col-12"></div>
+                <img src="assets/images/protagonist1.webp" class="img-fluid " alt="...">
+            </div>
+        </div>
+                <div class="card-body">
+                  <h5 class="card-title">Rule Set </h5>
+                  <a href="#target1" id="fromno" class="btn button-coloring">Gameplay</a>
+                  <a href="#target2" class="btn button-coloring">Earnings</a>
+                  <a href="#target3" class="btn button-coloring">Lifelines</a>
+                </div>
+              </div>
+    </div>
+    </div>
+<div class="row d-flex justify-content-around align-content-center ">
+    <div class="card g-1  col-10  g-md-2 g-lg-4 col-md-5 mt-3 d-flex justify-content-center align-content-center custom-jumbotron  ">  <a  id="target1"> <h3 class="text-center text-dark-emphasis mt-3 mb-2 "> Gameplay </h1> </a>
+    <ol>
+        <li class="text-center pb-2 list-text-size"><strong>Objective:</strong> Answer 15 questions correctly in a row to win the 9999 M game prize</li>
+        <li class="text-center pb-2 list-text-size " ><strong>Question Format:</strong> Four possible answers to a quiz question</li>
+        <li class="text-center pb-2 list-text-size " ><strong>Time Limit: </strong> 30 seconds to make up your mind </li>
+        <li class="text-center pb-2 list-text-size " > <strong>Take the Cash:</strong> At any point gamers can opt to cash out with the money that have earned</li></ol>
+</div>
+<div class="card  col-10  col-md-5 mt-3 d-flex justify-content-center align-content-center custom-jumbotron   "> 
+    <a  id="target2"><h3 class="text-center text-light  text-dark-emphasis mt-0"> Earnings   </h3> </a>
+    <ol>
+        <li class="text-center pb-2  list-text-size"><strong>Earning:</strong> Correct answers advance contestants up the 'money tree', each level having a specified cash value.</li>
+        <li class="text-center  pb-2 list-text-size " ><strong>Locks: </strong> If a lock point is met and a question is answered correctly. You go home  with the locked amount.</li>
+    </ol>
+</div>
+<div class="card g-1 col-10 g-md-2 g-lg-4 col-md-6 d-flex justify-content-center align-content-center custom-jumbotron pb-5">
+    <a  id="target3"><h3 class="text-center text-light text-dark-emphasis ">Lifelines</h3>  </a>
+    <ol>
+        <li class="text-center pb-2 list-text-size"><strong>50:50:</strong> Two incorrect answers are removed, leaving one correct and one incorrect answer.</li>
+        <li class="text-center pb-2 list-text-size"><strong>Phone-A-Friend:</strong> Call a friend for advice for 30 seconds.</li>
+        <li class="text-center pb-2 list-text-size"><strong>Ask the Audience:</strong> Audience votes on the correct answer using keypads; results shared with the contestant.</li>
+    </ol>
+</div>
+</div>
+    <div class="d-lg-none" style="height:50px;"></div>
+    <div class="d-lg-block" style="height:100px;"></div>
+</div>
+  <!-- Footer Section -->
+  <footer class="w-100  pb-3">
+    <div class="container ">
+        <!-- Custom Rectangle with Phone Icon -->
+        <!-- Link to contact.html [in development] -->
+        <div class="custom-rectangle">
+            <!-- Home Icon -->
+            <i class="fa fa-phone " aria-hidden="true"></i>
+            <div class="custom-radius-rectangle">
+                <!-- Possibly a placeholder for additional content or design elements -->
+            </div>
+        </div>
+
+        <!-- Central Image in Footer -->
+        <div class="d-flex justify-content-center align-content-center circle-image">
+            <!-- Team Image -->
+            <img class="img-fluid" src="assets/images/NewIcon-nobg.png" width="100%" />
+        </div>
+
+        <!-- Custom Rectangle with Book Icon -->
+        <!-- Link to rulepage.html -->
+        <a href="index.html" class="text-decoration-none">
+            <div class="custom-rectangle1">
+
+                <i id="home-icon-coloring" class="fa fa-home " aria-hidden="true"></i> 
+        </a>
+        <div class="custom-radius-rectangle1">
+
+        </div>
+    </div>
+    </div>
+</footer>
+
+<!-- External Libraries and Scripts -->
+<!-- Font Awesome Library for Icons -->
+<script src="https://kit.fontawesome.com/11665d5c0d.js" crossorigin="anonymous"></script>
+
+<!-- Popper JS for Bootstrap tooltips, popovers, etc. -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS Library -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+<!-- Custom Script for Page Behavior -->
+<script src="assets/js/script.js" type="module"></script>
+</body>
+<!-- End of HTML Document -->
+
+
+</main>
+</body>

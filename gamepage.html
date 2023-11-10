@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/gamesheetmobile.css">
+
+</head>
+
+<body>
+
+    <header class="header-container">
+        <!-- Mobile version of header -->
+        <div class="row g-0 d-flex justify-content-center align-items-center ms-3 me-3 ">
+            <div
+                class="d-flex d-md-none col-12   justify-content-center align-content-center text-center header mt-4  ">
+                <!-- Logo and title for mobile version -->
+                <i class="fa-solid fa-hand-fist header-text header-text-smaller"> </i> <span
+                    class="header-text header-text-smaller"> &nbsp; Boxing Millionare </span>
+            </div>
+        </div>
+        <!-- Desktop version of header -->
+        <div class="row d-flex justify-content-center align-items-center ">
+            <div class="d-none d-md-flex col-12  justify-content-center align-content-center text-center header mt-2 ">
+                <!-- Logo and title for desktop version -->
+                <i class="fa-solid fa-hand-fist header-text mt-2"> </i> <span class="header-text"> &nbsp; Boxing
+                    Millionare </span>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="row m-0 ps-2 pt-1 pb-1 d-flex  justify-content-center align-items-center bg-dark " id="options-space">
+
+        <div class="col-4 mt-3 mb-3 d-flex  justify-content-center align-items-center bg-dark text-center " id="phoneafriend"> <i
+                class="fa-solid fa-phone"></i> </div>
+        <div class="col-4 d-flex  justify-content-center align-items-center bg-dark text-center " id="askAudience"> <i
+                class="fa-solid fa-user-group"></i></div>
+        <div class="col-4 d-flex  justify-content-center align-items-center bg-dark text-center " id="fifty-fifty"> <i
+                class="fa-solid fa-circle-half-stroke"></i> </div>
+    </div>
+    <div class="background-image-main-mobile">
+
+        <div class="row d-flex  justify-content-around align-items-center ps-xl-5 ms-xl-3">
+            <div class="col-3 pt-2 d-flex justify-content-between align-items-center ">
+
+                <div id="audio-control-container d-flex justify-content-center align-content-center "
+                    class="audio-container">
+                    <audio id="audioPlayer">
+                        <source src="assets/sounds/Timer.mp3" type="audio/mpeg">
+                    </audio>
+                    <button onclick="playAudio()" id="playButton"><i class="fa fa-play" aria-hidden="true"></i></button>
+                    <button onclick="pauseAudio()"  id="pauseButton"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                    <input type="range" id="volumeSlider" class="vertical-slider" min="0" max="1" step="0.1" value="1">
+                </div>
+            </div>
+
+            <div class=" col-2 mt-2 me-3 d-flex flex-column align-items-center text-center">
+
+                <div class="border border-dark d-flex justify-content-center align-items-center bg-dark">
+                    <h1 class="h1-reel text-center mt-0 mb-1"> Prize Score </h1>
+                </div>
+                <div class="reel-container border border-dark d-flex align-items-center ">
+                    <div class="reel d-flex flex-column align-items-center w-100" id="reel">
+                        <div class=" mb-2 border border-dark d-flex justify-content-center align-items-center bg-dark font-weight-bold text-center"
+                            id="question1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="g-1 col-2 me-2  d-flex  justify-content-center align-items-center text-center">
+                <div class="row bg-black"> <span class="col-12 text-center"> Timer </span>
+                    <div class="col-12 text-center " id="timer">30 s</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-11 ms-3 ms-md-none col-md-9 d-flex flex-column  mt-2 justify-content-between align-content-center "
+            id="graphics-space">
+
+            <div class="row d-flex mt-3 mb-3 justify-content-around ps-md-5 ms-md-5 rounded">
+                <div class=" col-12 col-md-8 m-1 ps-2 pt-1 pb-1 d-flex  justify-content-center align-items-center bg-dark question-border-color round-3 "
+                    id="question-space">
+                    Question </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="row d-flex mt-3 justify-content-center align-content-center   rounded" id="question-container">
+            <div class="col-5 m-1 ps-2 pt-1 pb-1   col-md-2 d-flex justify-content align-content-center choice-border-color  bg-dark  multiple-choice-padding-left rounded-4 active  "
+                id="A-text"> A : </div>
+            <div class="col-5 m-1 ps-2 pt-1 pb-1   col-md-2 d-flex justify-content-start align-content-center multiple-choice-padding-left bg-dark  rounded-4 choice-border-color active "
+                id="B-text"> B : </div>
+            <div class="col-5 m-1 ps-2 pt-1 pb-1    col-md-2 d-flex justify-content-start align-content-center bg-dark  multiple-choice-padding-left rounded-4  choice-border-color active  "
+                id="C-text"> C : </div>
+            <div class="col-5 m-1 ps-2 pt-1 pb-1    col-md-2 d-flex justify-content-start align-content-center bg-dark  multiple-choice-padding-left rounded-4  choice-border-color active  "
+                id="D-text"> D : </div>
+        </div>
+
+        <div class="row justify-content-center align-content-center cash-out-positioning">
+            <div class="col-5 align-content-center multiple-choice-padding-left bg-dark  rounded-4 choice-border-color bt-5 text-center"
+            id="cash-out">
+                <p>cash out</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="w-100  pb-3">
+        <div class="container">
+            <!-- Custom Rectangle with Phone Icon -->
+            <!-- Link to contact.html [in development] -->
+            <div class="custom-rectangle">
+                <!-- Home Icon -->
+                <i class="fa fa-phone " aria-hidden="true"></i>
+                <div class="custom-radius-rectangle">
+                    <!-- Possibly a placeholder for additional content or design elements -->
+                </div>
+            </div>
+
+            <!-- Central Image in Footer -->
+            <div class="d-flex justify-content-center align-content-center circle-image">
+                <!-- Team Image -->
+                
+                <img class="img-fluid full-width" src="assets/images/NewIcon-nobg.png"/>
+            </div>
+
+            <!-- Custom Rectangle with Book Icon -->
+            <!-- Link to rulepage.html -->
+            <a href="rulepage.html">
+                <div class="custom-rectangle1">
+
+                    <i class="fa fa-book col-black" aria-hidden="true"></i> 
+            
+            <div class="custom-radius-rectangle1">
+            </a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/11665d5c0d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js" type="module"></script>
+    <script src="features.js" type="module" > </script>
+</body>
+
+</html>

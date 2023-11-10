@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page -->
+    <title>Quiz Game </title>
+    <!-- Link to the Bootstrap CSS library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles1.css">
+</head>
+
+<body class="m-0 p-0">
+    <!-- Header section -->
+    <header class="container-fluid header-container  m-0 p-0 ">
+        <!-- Mobile version of header -->
+        <div class="row g-0 d-flex justify-content-center align-items-center ms-3 me-3 ">
+            <div
+                class="d-flex d-md-none col-12   justify-content-center align-content-center text-center header mt-4  ">
+                <!-- Logo and title for mobile version -->
+                <i class="fa-solid fa-hand-fist header-text header-text-smaller"> </i> <span
+                    class="header-text header-text-smaller"> &nbsp Boxing Millionare </span>
+            </div>
+        </div>
+        <!-- Desktop version of header -->
+        <div class="row d-flex justify-content-center align-items-center ">
+            <div class="d-none d-md-flex col-12  justify-content-center align-content-center text-center header mt-2 ">
+                <!-- Logo and title for desktop version -->
+                <i class="fa-solid fa-hand-fist header-text mt-2"> </i> <span class="header-text"> &nbsp Boxing
+                    Millionare </span>
+            </div>
+        </div>
+    </header>
+    <!-- Main content of the page -->
+    <main>
+        <!-- Placeholder to push content down -->
+        <div class="push-content-down"></div>
+        <!-- Game difficulty selection and audio controls -->
+        <div class="row pt-4 pb-2">
+            <!-- Audio control section -->
+            <div
+                class="col-2 col-md-1 pt-2 ps-md-4 ms-3 ms-xl-4 ps-xl-4 d-flex justify-content-center align-items-center position-relative">
+                <div id="audio-control-container"
+                    class="audio-container d-flex-column justify-content-around align-content-center ps-xl-3 pt-xl-1">
+                    <!-- Audio player element -->
+                    <audio id="audioPlayer">
+                        <source src="assets/sounds/Question10.mp3" type="audio/mpeg">
+                    </audio>
+                    <!-- Play and pause buttons for audio -->
+                    <div class="d-flex-column justify-content-between align-content-center">
+                        <button class="ms-2" id="playButton"><i class="fa fa-play text-center"
+                                aria-hidden="true"></i></button>
+                        <button class="ms-2" id="pauseButton"><i class="fa fa-pause text-center "
+                                aria-hidden="true"></i></button>
+                    </div>
+                    <!-- Volume control slider -->
+                    <div
+                        class="reposition-the-audio-scroller d-flex-column justify-content-center align-items-center position-relative">
+                        <input type="range" id="volumeSlider" class="vertical-slider position-fixed" min="0" max="1"
+                            step="0.1" value="1">
+                    </div>
+                </div>
+            </div>
+            <!-- Difficulty buttons -->
+            <div class="col-8  d-flex   justify-content-center align-items-center me-2 ms-lg-1 ms-xl-2 row">
+                <!-- Easy difficulty button -->
+                <div class="col-12  d-flex   justify-content-center align-items-center me-4 w-100 mt-5  mb-4 ">
+                    <a href="gamepage.html "> <button class=" ms-md-5 pushable ">
+                            <span class="shadow"></span>
+                            <span class="edge"></span>
+                            <span class="front">
+                                Easy
+                            </span>
+                        </button>
+                    </a>
+                </div>
+                <!-- Medium difficulty button -->
+                <div class="col-12  d-flex  justify-content-center align-items-center me-4  w-100 mt-2 mb-4  ">
+                    <a href="gamepage.html"> <button class="pushable mt-3 mb-2 ms-md-5 ">
+                            <span class="shadow"></span>
+                            <span class="edge"></span>
+                            <span class="front">
+                                Medium
+                            </span>
+                        </button>
+                    </a>
+                </div>
+                <!-- Hard difficulty button -->
+                <div class="col-12  d-flex   justify-content-center align-items-center me-4 w-100 mt-2 mb-5   ">
+                    <a href="gamepage.html"> <button class="pushable mt-3 ms-md-5  ">
+                            <span class="shadow"></span>
+                            <span class="edge"></span>
+                            <span class="front">
+                                Hard
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!-- Placeholder for advertising content -->
+            <div class=" col-2 d-md-flex   row g-0 ">
+                <div class="col-12 custom-ad-div bg-body-secondary rounded-right ">
+                    <h6 class="display-4 text-center">Advertise Here!</h6>
+                    <p class="text-center">Contact the team </p>
+                </div>
+                <div class="col-12"></div>
+            </div>
+        </div>
+        <!-- Advertisements section -->
+        <article>
+            <div class="row d-flex justify-content-center align-items-center advertise-font  mb-4">
+                <!-- Mobile version of advertisements -->
+                <div class="col-12 d-flex-column d-md-none bg-body-secondary rounded-right ">
+                    <p class="text-center" style="font-size:14px;">Advert </p>
+                    <p class="text-center">Contact the team </p>
+                </div>
+                <!-- Desktop version of advertisements -->
+                <div class="col-8 d-none d-md-flex  custom-ad-div bg-body-secondary rounded-right row ">
+                    <h4 class="col-12 display-4 text-center">Advertise Here!</h1>
+                        <p class="text-center"> Contact the team </p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- Footer Section -->
+    <footer class="w-100  pb-3">
+        <div class="container ">
+            <!-- Custom Rectangle with Phone Icon -->
+            <!-- Link to contact.html [in development] -->
+            <div class="custom-rectangle">
+                <!-- Home Icon -->
+                <i class="fa fa-phone " aria-hidden="true"></i>
+                <div class="custom-radius-rectangle">
+                    <!-- Possibly a placeholder for additional content or design elements -->
+                </div>
+            </div>
+
+            <!-- Central Image in Footer -->
+            <div class="d-flex justify-content-center align-content-center circle-image">
+                <!-- Team Image -->
+                <img class="img-fluid" src="assets/images/zetaSquad.webp" />
+            </div>
+
+            <!-- Custom Rectangle with Book Icon -->
+            <!-- Link to rulepage.html -->
+            <a href="rulepage.html">
+                <div class="custom-rectangle1">
+
+                    <i class="fa fa-book " aria-hidden="true"></i> 
+            </a>
+            <div class="custom-radius-rectangle1">
+
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- External Libraries and Scripts -->
+    <!-- Font Awesome Library for Icons -->
+    <script src="https://kit.fontawesome.com/11665d5c0d.js" crossorigin="anonymous"></script>
+
+    <!-- Popper JS for Bootstrap tooltips, popovers, etc. -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom Script for Page Behavior -->
+    <script src="assets/js/script.js" type="module"></script>
+</body>
+<!-- End of HTML Document -->
+
+</html>

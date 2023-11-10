@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Copperplate Gothic",sans-serif;
+  border-color:#2c3e50;
+}
+
+/* Styling for the header */
+/*header  stuff */ 
+header {
+  top: 0px; 
+  height: 14vh;
+}
+
+/* Container within the header with gradient background, padding, rounded corners, and shadow */
+.header-container {
+  background: linear-gradient(135deg, #5e23dc, #a069ec);
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the header container: scaling and shadow */
+.header-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Styling for the main text in the header: font, alignment, color, shadow */
+.header-text {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+}
+
+/* Styling for a slightly smaller header text */
+.header-text-smaller {
+  font-size: 1.5rem;
+}
+
+/* Styling for the smallest header text */
+.header-text-small {
+  font-size: 25px;
+}
+
+/*styling the cards */
+.overlay-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);}
+
+  /*Coding is love speech bubbles */
+  
+
+.box {
+  width: 300px;
+  margin: 50px auto;
+  background: #00bfb6;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position: relative;
+}
+
+
+.sb3:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #00bfb6;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  left: 19px;
+  bottom: -19px;
+}
+
+.custom-jumbotron1 {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: inline-flex;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  padding: 1% 2%;
+}
+
+.custom-rectangle,
+.custom-rectangle1 {
+  height: 10vh;
+  width: 40%;
+  flex: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-rectangle {
+  background: #7c4dff;
+  border-radius: 40px 0 0 40px;
+  box-shadow: 0 0 3px 0 #000;
+}
+
+.custom-rectangle1 {
+  background-color: white;
+  border-radius: 0 40px 40px 0;
+  box-shadow: 0 0 3px 0 #000;
+}
+
+.circle-image {
+  position: absolute;
+  width: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.fa {
+  font-size: 2rem;
+}
+
+.fa-phone {
+  color: white;
+}
+
+#home-icon-coloring {
+  color: #7c4dff  !important;
+}
+.button-coloring {color: #5e23dc;}
+.list-text-size {
+  font-size: 1.1rem;
+}
+
+.custom-jumbotron {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
